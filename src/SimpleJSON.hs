@@ -22,7 +22,15 @@ data JValue = JString String
             | JNull
             | JObject [(String, JValue)]
             | JArray [JValue]
-            deriving (Eq, Ord, Show)
+              deriving (Eq, Ord, Show)
+
+getString :: JValue -> Maybe String
+getString (JString s) = Just s
+getString _           = Nothing
+
+getInt :: JValue -> Maybe Int
+getInt (JNumber n) = Just (truncate n)
+getInt _           = Nothing
 
 
 
