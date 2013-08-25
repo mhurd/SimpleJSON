@@ -1,0 +1,10 @@
+Version of workspace file format:
+               1
+Time of storage:
+               "Sun Aug 25 20:00:06 BST 2013"
+Name of the workspace:
+               "SimpleJSON"
+File paths of contained packages:
+               ["SimpleJSON.cabal"]
+Maybe file path of an active package:
+               Just "SimpleJSON.cabal"
