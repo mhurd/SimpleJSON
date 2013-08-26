@@ -12,7 +12,7 @@ executable SimpleJSON
     main-is: Main.hs
     buildable: True
     hs-source-dirs: src
-    other-modules: SimpleJSON
+    other-modules: PrettyJSON Prettify PutJSON SimpleJSON
  
 test-suite test-SimpleJSON
     build-depends: QuickCheck -any, base -any
